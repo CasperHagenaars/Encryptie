@@ -3,7 +3,6 @@ import math
 import time
 import sys
 T1 = time.time()
-
 c = Elliptic_curve(4273,2,3)
 P = Point(c,26,148)
 Q = Point(c,1134,660)
@@ -20,7 +19,7 @@ for i in range(1,3000):
     getal += P
     if getal.inf == True:
         break
-    print(i,getal)
+    print(i,str(getal))
 print('-----------------------------------------------------------------------------------------------------------')
 print(len(c.points()))
 T2 = time.time()

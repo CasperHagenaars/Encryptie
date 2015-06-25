@@ -5,7 +5,7 @@ import time
 curve = Elliptic_curve(4273,2,3)
 P = Point(curve,26,148)
 Q = Point(curve,24,73)
-PRNG = Generator(P,Q,17,10000)
+PRNG = Generator(P,Q,17,15)
 
 
 

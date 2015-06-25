@@ -21,6 +21,11 @@ class Generator:
         
     def getNextPRN(self):
         self.INT_seed = self._getNextSeed()
+        while len(str(self.INT_seed)) < self.INT_trunclen:
+            toevoeging = str(self._getNextSeed())
+            self.INT_seed = str(self.INT_seed)
+            self.INT_seed += toevoeging
+            self.INT_seed = int(self.INT_seed)
         return self._getPRN()
         
     
