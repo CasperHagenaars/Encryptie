@@ -1,0 +1,37 @@
+Class:
+    begin met Hoofdletter, Begin van alle volgende woorden met hoofdletter.
+    Vb: MyClass
+functie:
+    begin met kleine letter. Begin van alle volgende woorden met hoofdletter. Spaties na elke komma.
+    Vb: myFunction(self, var1, var2 = 3)
+    hulpfuncties met underscore leiden:
+    Vb: _myLocalFunction(self, var1, var2 = 3)
+Operaties:
+    + of - : spatie omheen, vb: a + b
+    negatie: geen spatie: vb: -a
+    * of / : geen spatie, vb: a/b
+    scalaire vermenigvuldiging: scalair links, behalve bij punten. vb: 3*a en P*3 
+    = spatie omheen: a = b
+    logische tekens(==, <, >=, or, and, etc.) : spatie omheen vb: a == b, c > d
+    == en != gebruiken voor vergelijkingen, not gebruiken voor functies van BOOL type.
+    vb: GOED: if var1 != var2: , FOUT: if not var1 == var2, FOUT: if var1 not is var2:
+        GOED: if not a():, FOUT: if a() == False
+        GOED: if mybool == True:, GOED: if mybool == False, FOUT: if not mybool:, FOUT: if not mybool == True,
+    
+    'or' en 'and' gebruiken, vb: if a or b. NIET if a || b
+    modulo : spaties vb a % b
+    haakjes: geen spaties, erbuiten volgt regels van operatie. vb: (a + b) % c, vb2: (a + b)*c
+    ** : geen spaties, vb: x**2, p**3
+    
+Variabelen:
+    Altijd kleine letters. Korte namen dan wel afkortingen. Zo nodig als comment erbij zetten waar de naam op slaat.
+    vb: lhs = y**2 % p # Left Hand Side of elliptic curve equation
+        xp = self.x # X coordinate of point P
+        yq = other.y # Y coordinate of point Q
+        cpot = self # Current Power Of Two times starting point (2**n*P)
+        
+
+        
+Benaming van punten op de EC:
+    Eigen punt: Punt P
+    Ander punt: Punt Q
